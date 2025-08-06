@@ -46,10 +46,10 @@
           }
         }
       },
-      "Hangfire.AspNetCore/1.8.20": {
+      "Hangfire.AspNetCore/1.8.4": {
         "type": "package",
         "dependencies": {
-          "Hangfire.NetCore": "[1.8.20]"
+          "Hangfire.NetCore": "[1.8.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/Hangfire.AspNetCore.dll": {
@@ -141,10 +141,26 @@
           "lib/netstandard2.0/Hangfire.MySql.Core.dll": {}
         }
       },
-      "Hangfire.NetCore/1.8.20": {
+      "Hangfire.MySqlStorage/2.0.3": {
         "type": "package",
         "dependencies": {
-          "Hangfire.Core": "[1.8.20]",
+          "Dapper": "1.50.5",
+          "Hangfire.Core": "1.6.21",
+          "Microsoft.CSharp": "4.4.1",
+          "MySqlConnector": "1.0.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Hangfire.MySql.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Hangfire.MySql.dll": {}
+        }
+      },
+      "Hangfire.NetCore/1.8.4": {
+        "type": "package",
+        "dependencies": {
+          "Hangfire.Core": "[1.8.4]",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "3.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "3.0.0"
@@ -156,6 +172,22 @@
         },
         "runtime": {
           "lib/netstandard2.1/Hangfire.NetCore.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Hangfire.SqlServer/1.8.20": {
+        "type": "package",
+        "dependencies": {
+          "Hangfire.Core": "[1.8.20]"
+        },
+        "compile": {
+          "lib/netstandard2.0/Hangfire.SqlServer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Hangfire.SqlServer.dll": {
             "related": ".xml"
           }
         }
@@ -692,7 +724,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
@@ -784,10 +816,10 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -976,11 +1008,10 @@
           }
         }
       },
-      "MySqlConnector/2.4.0": {
+      "MySqlConnector/2.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2"
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
         },
         "compile": {
           "lib/net8.0/MySqlConnector.dll": {
@@ -1006,19 +1037,19 @@
           }
         }
       },
-      "Pomelo.EntityFrameworkCore.MySql/8.0.0": {
+      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "[8.0.0, 8.0.999]",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
+          "MySqlConnector": "2.2.5"
         },
         "compile": {
-          "lib/net8.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
             "related": ".xml"
           }
         }
@@ -1807,10 +1838,10 @@
         "lib/netstandard2.0/Google.Protobuf.xml"
       ]
     },
-    "Hangfire.AspNetCore/1.8.20": {
-      "sha512": "OoVxOZanKlnpyAuCAYWKGztQHYw6GTQxQD/W3bfOfFsD+8fYp7FEDKbMEsrrMvAtF+gLiY1HNk9xYjUpNnSxGA==",
+    "Hangfire.AspNetCore/1.8.4": {
+      "sha512": "eb2+63TpZbdVHIsnH8iT/gWTH1K0LvpByo/zfjnckw8JnSadw5OR8oH90+oslh7J2FTRrJMvwCv8AFyeAu2fzw==",
       "type": "package",
-      "path": "hangfire.aspnetcore/1.8.20",
+      "path": "hangfire.aspnetcore/1.8.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1820,9 +1851,8 @@
         "LICENSE_ROYALTYFREE",
         "LICENSE_STANDARD",
         "NOTICES",
-        "hangfire.aspnetcore.1.8.20.nupkg.sha512",
+        "hangfire.aspnetcore.1.8.4.nupkg.sha512",
         "hangfire.aspnetcore.nuspec",
-        "icon.png",
         "lib/net451/Hangfire.AspNetCore.dll",
         "lib/net451/Hangfire.AspNetCore.xml",
         "lib/net461/Hangfire.AspNetCore.dll",
@@ -1930,10 +1960,23 @@
         "lib/netstandard2.0/Hangfire.MySql.Core.dll"
       ]
     },
-    "Hangfire.NetCore/1.8.20": {
-      "sha512": "QCMoUaOokUsScJIyyo9SDVaAOpPIaIpBhGzN7M9GgZI9Kzetd7Y+hmFlQUTpROi7bcASIGoTOPnPoqdNA///Rw==",
+    "Hangfire.MySqlStorage/2.0.3": {
+      "sha512": "02hKjRxeEl3UQkfu3tHXZd2qe5FwOErX2j8ezhJooFEzCyrrDhFTuB8sXtJW0Hr+sbAuR6oF4nvAwOp+USU6nw==",
       "type": "package",
-      "path": "hangfire.netcore/1.8.20",
+      "path": "hangfire.mysqlstorage/2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hangfire.mysqlstorage.2.0.3.nupkg.sha512",
+        "hangfire.mysqlstorage.nuspec",
+        "lib/net452/Hangfire.MySql.dll",
+        "lib/netstandard2.0/Hangfire.MySql.dll"
+      ]
+    },
+    "Hangfire.NetCore/1.8.4": {
+      "sha512": "O7Cm4mEHeBEZCNfx/AROU3Xdo3qQ8R/t1DItoDSRqtKh8Hv4340UVLz3Ztwf3HxhY3zFuPj9KeT0aColIHjD0Q==",
+      "type": "package",
+      "path": "hangfire.netcore/1.8.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1943,9 +1986,8 @@
         "LICENSE_ROYALTYFREE",
         "LICENSE_STANDARD",
         "NOTICES",
-        "hangfire.netcore.1.8.20.nupkg.sha512",
+        "hangfire.netcore.1.8.4.nupkg.sha512",
         "hangfire.netcore.nuspec",
-        "icon.png",
         "lib/net451/Hangfire.NetCore.dll",
         "lib/net451/Hangfire.NetCore.xml",
         "lib/net461/Hangfire.NetCore.dll",
@@ -1956,6 +1998,32 @@
         "lib/netstandard2.0/Hangfire.NetCore.xml",
         "lib/netstandard2.1/Hangfire.NetCore.dll",
         "lib/netstandard2.1/Hangfire.NetCore.xml"
+      ]
+    },
+    "Hangfire.SqlServer/1.8.20": {
+      "sha512": "O+0A2dEf+cbKnJQRxK5jF5c4aLDCOf2+KllYBwjdO82KRVKz0nox8wirWQP/AKW85f4NJ93ZKAEtAWOFk6DLxw==",
+      "type": "package",
+      "path": "hangfire.sqlserver/1.8.20",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING",
+        "COPYING.LESSER",
+        "LICENSE.md",
+        "LICENSE_ROYALTYFREE",
+        "LICENSE_STANDARD",
+        "NOTICES",
+        "hangfire.sqlserver.1.8.20.nupkg.sha512",
+        "hangfire.sqlserver.nuspec",
+        "icon.png",
+        "lib/net451/Hangfire.SqlServer.dll",
+        "lib/net451/Hangfire.SqlServer.xml",
+        "lib/netstandard1.3/Hangfire.SqlServer.dll",
+        "lib/netstandard1.3/Hangfire.SqlServer.xml",
+        "lib/netstandard2.0/Hangfire.SqlServer.dll",
+        "lib/netstandard2.0/Hangfire.SqlServer.xml",
+        "tools/install.sql"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -3035,10 +3103,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
-      "sha512": "3iE7UF7MQkCv1cxzCahz+Y/guQbTqieyxyaWKhrRO91itI9cOKO76OHeQDahqG4MmW5umr3CcCvGmK92lWNlbg==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "sha512": "cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.2",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3062,7 +3130,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -3159,10 +3227,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
-      "sha512": "nroMDjS7hNBPtkZqVBbSiQaQjWRDxITI8Y7XnDs97rqG3EbzVTNLZQf7bIeUJcaHOV8bca47s1Uxq94+2oGdxA==",
+    "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
+      "sha512": "arDBqTgFCyS0EvRV7O3MZturChstm50OJ0y9bDJvAcmEPJm0FFpFyjU/JLYyStNGGey081DvnQYlncNX5SJJGA==",
       "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/8.0.2",
+      "path": "microsoft.extensions.logging.abstractions/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3227,7 +3295,7 @@
         "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -3458,10 +3526,10 @@
         "mysql.entityframeworkcore.nuspec"
       ]
     },
-    "MySqlConnector/2.4.0": {
-      "sha512": "78M+gVOjbdZEDIyXQqcA7EYlCGS3tpbUELHvn6638A2w0pkPI625ixnzsa5staAd3N9/xFmPJtkKDYwsXpFi/w==",
+    "MySqlConnector/2.3.0": {
+      "sha512": "CpW2vvPvqfjSR8MIhRTjoM7xoR3fzRbO4b8EAcjIfPv8/ecVmFItJkDmZ9wkHsiiL0XSUCOmxCmdYBEla616PQ==",
       "type": "package",
-      "path": "mysqlconnector/2.4.0",
+      "path": "mysqlconnector/2.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3474,16 +3542,16 @@
         "lib/net48/MySqlConnector.xml",
         "lib/net6.0/MySqlConnector.dll",
         "lib/net6.0/MySqlConnector.xml",
+        "lib/net7.0/MySqlConnector.dll",
+        "lib/net7.0/MySqlConnector.xml",
         "lib/net8.0/MySqlConnector.dll",
         "lib/net8.0/MySqlConnector.xml",
-        "lib/net9.0/MySqlConnector.dll",
-        "lib/net9.0/MySqlConnector.xml",
         "lib/netstandard2.0/MySqlConnector.dll",
         "lib/netstandard2.0/MySqlConnector.xml",
         "lib/netstandard2.1/MySqlConnector.dll",
         "lib/netstandard2.1/MySqlConnector.xml",
         "logo.png",
-        "mysqlconnector.2.4.0.nupkg.sha512",
+        "mysqlconnector.2.3.0.nupkg.sha512",
         "mysqlconnector.nuspec"
       ]
     },
@@ -3517,18 +3585,20 @@
         "newtonsoft.json.nuspec"
       ]
     },
-    "Pomelo.EntityFrameworkCore.MySql/8.0.0": {
-      "sha512": "wEzKTeYCs/+cGSpT5zE8UrKkJyqpJ24yBufthDoCWUhpCCYUIsMKeX4fvaYcm9mbkfHP2dZ+p6V+ZKTAZ3hXRQ==",
+    "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
+      "sha512": "Qk5WB/skSZet5Yrz6AN2ywjZaB1pxfAmvQ+5I4khTkLwwIamI4QJoH2NphCWLFQL+2ar8HvsNCTmwYk0qhqL0w==",
       "type": "package",
-      "path": "pomelo.entityframeworkcore.mysql/8.0.0",
+      "path": "pomelo.entityframeworkcore.mysql/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "icon.png",
-        "lib/net8.0/Pomelo.EntityFrameworkCore.MySql.dll",
-        "lib/net8.0/Pomelo.EntityFrameworkCore.MySql.xml",
-        "pomelo.entityframeworkcore.mysql.8.0.0.nupkg.sha512",
+        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll",
+        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.xml",
+        "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll",
+        "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.xml",
+        "pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
@@ -5183,16 +5253,17 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Hangfire.AspNetCore >= 1.8.20",
-      "Hangfire.Core >= 1.8.20",
+      "Hangfire.AspNetCore >= 1.8.4",
       "Hangfire.MySql.Core >= 2.2.5",
+      "Hangfire.MySqlStorage >= 2.0.3",
+      "Hangfire.SqlServer >= 1.8.20",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0",
       "Microsoft.Extensions.Configuration >= 9.0.7",
       "MySql.Data >= 9.4.0",
       "MySql.EntityFrameworkCore >= 8.0.0",
-      "MySqlConnector >= 2.4.0",
-      "Pomelo.EntityFrameworkCore.MySql >= 8.0.0",
+      "MySqlConnector >= 2.3.0",
+      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -5249,15 +5320,19 @@
         "dependencies": {
           "Hangfire.AspNetCore": {
             "target": "Package",
-            "version": "[1.8.20, )"
-          },
-          "Hangfire.Core": {
-            "target": "Package",
-            "version": "[1.8.20, )"
+            "version": "[1.8.4, )"
           },
           "Hangfire.MySql.Core": {
             "target": "Package",
             "version": "[2.2.5, )"
+          },
+          "Hangfire.MySqlStorage": {
+            "target": "Package",
+            "version": "[2.0.3, )"
+          },
+          "Hangfire.SqlServer": {
+            "target": "Package",
+            "version": "[1.8.20, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -5285,11 +5360,11 @@
           },
           "MySqlConnector": {
             "target": "Package",
-            "version": "[2.4.0, )"
+            "version": "[2.3.0, )"
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[7.0.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -5318,5 +5393,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Versão detectada do pacote fora da restrição de dependência: Hangfire.NetCore 1.8.4 requer Hangfire.Core (= 1.8.4), mas a versão Hangfire.Core 1.8.20 foi resolvida.",
+      "libraryId": "Hangfire.Core",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

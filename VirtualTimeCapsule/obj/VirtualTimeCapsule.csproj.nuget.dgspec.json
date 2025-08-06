@@ -53,15 +53,19 @@
           "dependencies": {
             "Hangfire.AspNetCore": {
               "target": "Package",
-              "version": "[1.8.20, )"
-            },
-            "Hangfire.Core": {
-              "target": "Package",
-              "version": "[1.8.20, )"
+              "version": "[1.8.4, )"
             },
             "Hangfire.MySql.Core": {
               "target": "Package",
               "version": "[2.2.5, )"
+            },
+            "Hangfire.MySqlStorage": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.8.20, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -89,11 +93,11 @@
             },
             "MySqlConnector": {
               "target": "Package",
-              "version": "[2.4.0, )"
+              "version": "[2.3.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

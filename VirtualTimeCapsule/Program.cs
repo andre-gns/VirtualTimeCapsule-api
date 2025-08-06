@@ -2,38 +2,38 @@ using VirtualTimeCapsule.Api.Data;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Hangfire;
-using Hangfire.MySql.Core;
+ using Hangfire.MySql;using Hangfire.MySql.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adicionando os serviços ao contêiner.
+//
 
-// Configuração do AppDbContext
+// Configuração do AddDbContext 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString,
-        new MySqlServerVersion(new Version(8, 0, 36)), // Substitua pela sua versão do MySQL Server
+        new MySqlServerVersion(new Version(8, 0, 36)), 
         mysqlOptions => mysqlOptions.EnableRetryOnFailure())
 );
 
-// Configuração do Hangfire
+
 var hangfireConnectionString = builder.Configuration.GetConnectionString("HangfireConnection");
 builder.Services.AddHangfire(config => config
     .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
     .UseSimpleAssemblyNameTypeSerializer()
     .UseRecommendedSerializerSettings()
-    .UseStorage(new MySqlStorage(hangfireConnectionString, new MySqlStorageOptions())));
+    .UseStorage(new MySqlStorage(hangfireConnectionString, new MySqlStorageOptions()));
 
-builder.Services.AddHangfireServer(); // Adiciona o servidor de processamento em background
+builder.Services.AddHangfireServer(); 
 
-// Configuração dos Controllers, Swagger e Endpoints
+// 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configurando o pipeline de requisição HTTP.
+
 
 if (app.Environment.IsDevelopment())
 {
@@ -45,7 +45,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.UseHangfireDashboard(); // Habilita o Dashboard do Hangfire
+app.UseHangfireDashboard();
 
 app.MapControllers();
 
