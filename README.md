@@ -30,5 +30,3 @@ The architecture is designed to be clean and modular, prioritizing maintainabili
 4. Run the project.
 
 The interactive API documentation is available via Swagger.
-#
-> **Status:** Project in progress.
