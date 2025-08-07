@@ -7,11 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-	  <PackageReference Include="Hangfire.AspNetCore" Version="1.8.4" />
-	  <PackageReference Include="Hangfire.AspNetCore" Version="1.8.4" />
-	  <PackageReference Include="Hangfire.MySql.Core" Version="2.2.5" />
-	  <PackageReference Include="Hangfire.MySqlStorage" Version="2.0.3" />
-	  <PackageReference Include="Hangfire.SqlServer" Version="1.8.20" />
+	 
 	  
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -27,10 +23,6 @@
 	  <PackageReference Include="MySqlConnector" Version="2.3.0" />
 	  <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
