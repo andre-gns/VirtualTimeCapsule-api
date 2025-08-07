@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\VirtualTimeCapsule.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11ABD4E9-7BF4-4D41-B5FA-D984F510D2E9}|VirtualTimeCapsule\\VirtualTimeCapsule.csproj|c:\\users\\admin\\source\\repos\\virtualtimecapsule.api\\virtualtimecapsule\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11ABD4E9-7BF4-4D41-B5FA-D984F510D2E9}|VirtualTimeCapsule\\VirtualTimeCapsule.csproj|solutionrelative:virtualtimecapsule\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{11ABD4E9-7BF4-4D41-B5FA-D984F510D2E9}|VirtualTimeCapsule\\VirtualTimeCapsule.csproj|c:\\users\\admin\\source\\repos\\virtualtimecapsule.api\\virtualtimecapsule\\services\\myschedulerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11ABD4E9-7BF4-4D41-B5FA-D984F510D2E9}|VirtualTimeCapsule\\VirtualTimeCapsule.csproj|solutionrelative:virtualtimecapsule\\services\\myschedulerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11ABD4E9-7BF4-4D41-B5FA-D984F510D2E9}|VirtualTimeCapsule\\VirtualTimeCapsule.csproj|c:\\users\\admin\\source\\repos\\virtualtimecapsule.api\\virtualtimecapsule\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11ABD4E9-7BF4-4D41-B5FA-D984F510D2E9}|VirtualTimeCapsule\\VirtualTimeCapsule.csproj|solutionrelative:virtualtimecapsule\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11ABD4E9-7BF4-4D41-B5FA-D984F510D2E9}|VirtualTimeCapsule\\VirtualTimeCapsule.csproj|c:\\users\\admin\\source\\repos\\virtualtimecapsule.api\\virtualtimecapsule\\services\\mybackgroundjobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,25 +50,24 @@
               "RelativeToolTip": "VirtualTimeCapsule\\Services\\MyBackgroundJobService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T19:37:58.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T19:37:58.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MySchedulerService.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\VirtualTimeCapsule.Api\\VirtualTimeCapsule\\Services\\MySchedulerService.cs",
               "RelativeDocumentMoniker": "VirtualTimeCapsule\\Services\\MySchedulerService.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\VirtualTimeCapsule.Api\\VirtualTimeCapsule\\Services\\MySchedulerService.cs",
               "RelativeToolTip": "VirtualTimeCapsule\\Services\\MySchedulerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T19:25:00.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\VirtualTimeCapsule.Api\\VirtualTimeCapsule\\Program.cs",
               "RelativeDocumentMoniker": "VirtualTimeCapsule\\Program.cs",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "VirtualTimeCapsule\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T19:45:53.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T19:45:53.12Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "VirtualTimeCapsule\\VirtualTimeCapsule.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-06T18:37:26.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-06T18:37:26.606Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "VirtualTimeCapsule\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-05T14:17:48.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T14:17:48.808Z"
             },
             {
               "$type": "Document",

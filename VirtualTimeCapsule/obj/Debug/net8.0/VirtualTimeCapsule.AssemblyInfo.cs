@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VirtualTimeCapsule")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42118f2fbaa5688430115be1626bfbee181baf93")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2b029f3cd5d9d6da5f8cbb6428051cdb5328832")]
 [assembly: System.Reflection.AssemblyProductAttribute("VirtualTimeCapsule")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VirtualTimeCapsule")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

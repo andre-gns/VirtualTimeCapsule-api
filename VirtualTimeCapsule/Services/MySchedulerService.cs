@@ -22,15 +22,18 @@ namespace VirtualTimeCapsule.Api.Services
             {
                 _logger.LogInformation("MySchedulerService executando em: {time}", DateTimeOffset.Now);
 
-                // Coloque a lógica da sua tarefa agendada aqui
-                // Exemplo:
-                // await RunMyScheduledTask();
+                 await RunMyScheduledTask();
 
                 // Aguarda 5 segundos antes de executar novamente
                 await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken);
             }
 
             _logger.LogInformation("MySchedulerService está parando.");
+        }
+
+        private async Task RunMyScheduledTask()
+        {
+            throw new NotImplementedException();
         }
     }
 }
